@@ -1,0 +1,13 @@
+<div [ngClass]="alert" class="alert" role="alert">
+  A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+
+<button class="btn btn-success" (click)="alert = 'alert-success'">Success</button>
+<button class="btn btn-danger" (click)="alert = 'alert-danger'">Danger</button>
+
+<br><br>
+<h3 [ngClass]="{'text-danger': propiedades.danger, 'text-info': !propiedades.danger}">
+  You are welcome!
+</h3>
+
+<button (click)="propiedades.danger = !propiedades.danger" class="btn" [ngClass]="{'btn-danger': propiedades.danger, 'btn-info': !propiedades.danger}">Change</button>
