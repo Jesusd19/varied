@@ -1,3 +1,17 @@
-<p>
-  user works!
-</p>
+<div class="row">
+  <div class="col-md-12 text-center">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button [routerLink]="['new']" routerLinkActive="active" type="button" class="btn btn-secondary">
+        New
+      </button>
+      <button [routerLink]="['edit']" routerLinkActive="active" type="button" class="btn btn-secondary">
+        Edit
+      </button>
+      <button [routerLink]="['details']" routerLinkActive="active" type="button" class="btn btn-secondary">
+        Details
+      </button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
