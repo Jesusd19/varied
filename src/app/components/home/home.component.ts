@@ -13,11 +13,44 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: []
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit  {
 
-  constructor() { }
+  constructor() { 
+    console.log("constructor");
+    
+  }
 
   ngOnInit() {
+    console.log("ngOnInit");
   }
+  ngOnChanges (){
+    console.log("OnChanges");
+    
+  }
+  ngDoCheck(){
+    console.log("DoCheck");
+    
+  }
+  ngAfterContentInit(){
+    console.log("AfterContentInit");
+    
+  }
+  ngAfterContentChecked (){
+    console.log("AfterContentChecked");
+    
+  }
+  ngAfterViewInit(){
+    console.log("AfterViewInit");
+    
+  }
+  ngAfterViewChecked(){
+    console.log("AfterViewChecked");
+    
+  }
+  ngOnDestroy(){
+    console.log("OnDestroy");
+    
+  }
+
 
 }
